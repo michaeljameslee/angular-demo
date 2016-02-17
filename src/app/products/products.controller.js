@@ -1,7 +1,14 @@
 'use strict';
 
 angular.module('angularInterview')
-  .controller('ProductsCtrl', function ($scope) {
-    $scope.title = 'Angular Developer Interview Skeleton';
-    $scope.subtitle = 'Implement your products list on this page...';
+  .controller('ProductsCtrl', function ($scope, ProductsSvc) {
+
+    $scope.products = [];
+
+    ProductsSvc.getProducts().then( function(data){
+
+      $scope.products = data;
+
+    });
+
   });
