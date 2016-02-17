@@ -1,17 +1,11 @@
 <div class="container">
 
   <div class="row">
-    <div class="small-12 small-text-center columns">
-
-        {{products.products}}
-
-    </div>
-  </div>
-
-  <div class="row">
     <div class="small-12 columns">
-
-      <!-- INSERT PRODUCT LIST HERE -->
+      
+      <div ng-repeat="product in products track by $index">
+        {{product.styleNumber}} - {{product.displayName}}
+      </div>
 
     </div>
   </div>

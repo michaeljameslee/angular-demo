@@ -7,7 +7,9 @@ angular.module('angularInterview')
 
     ProductsSvc.getProducts().then( function(data){
 
-      $scope.products = data;
+      if(data) {
+        $scope.products = data.products;
+      }
 
     });
 
