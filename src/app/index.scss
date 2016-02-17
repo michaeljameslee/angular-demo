@@ -3,6 +3,10 @@ $subtitle-color: lighten($title-color, 20%);
 $detail-bg-color: #F3F2ED;
 $hot-color: red;
 
+html,body {
+  height:100%;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -63,7 +67,7 @@ $hot-color: red;
       background-color: $detail-bg-color;
       color: $hot-color;
       padding: 5px;
-      margin: 8px;
+      margin: 8px 8px 20px 8px;
       -moz-box-shadow: 2px 2px 6px rgba(0,0,0,.20);
       -webkit-box-shadow: 2px 2px 6px rgba(0,0,0,.20);
       box-shadow: 2px 2px 6px rgba(0,0,0,.20);
