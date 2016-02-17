@@ -37,6 +37,17 @@ angular.module('angularInterview')
         return deferred.promise;
 
       },
+      removeProduct: function(id) {
+
+        var cachedData = Products.cache.get('products');
+
+        _.remove(cachedData.products, function (product) {
+          return product.id === id;
+        });
+
+        Products.cache.put('products', cachedData);
+
+      },
       cache: null
 
     };
