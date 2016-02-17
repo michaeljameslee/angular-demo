@@ -1,0 +1,33 @@
+<div class="row product">
+  <div class="small-2 large-2 columns pic">
+    <a class="th" href="#">
+      <img src="{{product.image}}">
+    </a>
+  </div>
+  <div class="small-6 large-3 columns info">
+    <div class="title">{{product.displayName}}</div>
+    <div class="sub-title">STYLE: {{product.styleNumber}}</div>
+    <div class="price">
+      <span class="dollar-sign">$</span>
+      <span class="amount">{{product.totalPrice | number:2}}</span>
+    </div>
+  </div>
+  <div class="small-4 large-4 columns details">
+    <div class="spec">
+      <span class="property">color: </span>
+      <span class="value">{{product.color}}</span>
+    </div>
+    <div class="spec">
+      <span class="property">size: </span>
+      <span class="value">{{product.size}}</span>
+    </div>
+    <div class="spec">
+      <span class="property">quantity: </span>
+      <span class="value">{{product.quantity}}</span>
+    </div>
+    <div><a href="#" class="button tiny button-remove">REMOVE</a></div>
+  </div>
+  <div class="small-0 large-3 columns">
+  </div>
+</div>
+
