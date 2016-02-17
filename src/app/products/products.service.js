@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularInterview')
-  .service('ProductsSvc', function ($http, $q, $cacheFactory) {
+  .service('ProductsSvc', function ($http, $q, $cacheFactory, _) {
 
     var Products = {
 

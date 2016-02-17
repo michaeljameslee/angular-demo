@@ -11,5 +11,5 @@ angular.module('angularInterview')
     link: function(scope) {
       scope.removeProduct = ProductsSvc.removeProduct;
     }
-  }
+  };
 });

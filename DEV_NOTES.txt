@@ -1,0 +1,11 @@
+This was a really fun, and challenging test, thanks!
+
+Some things I'd have done if I had more time...
+
+ - Additional unit test coverage for ProductsSvc cache
+ - Side-fade animation for removing an item which may be challenging since delete doesn't remove an item, instead it
+   removes it from the cache which updates the model.
+ - Search button and filtering
+ - Custom filter for splitting dollars and cents so that they can be styled differently
+
+
