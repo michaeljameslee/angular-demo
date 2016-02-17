@@ -7,9 +7,6 @@ angular.module('angularInterview')
     scope: {
       product: '='
     },
-    templateUrl: 'app/products/product.view.html',
-    link: function(scope, elem, attrs) {
-
-    }
-  }
+    templateUrl: 'app/products/product.view.html'
+  };
 });
